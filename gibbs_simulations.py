@@ -11,8 +11,8 @@ BURN = 20
 M = 1000
 N1 = 10000
 N2 = 10000
-H1 = .05
-H2 = .05
+H1 = .99
+H2 = .99
 Ns = 0
 A00 = .70
 A10 = .10
@@ -154,9 +154,9 @@ def draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
 
         # params of posterior distribution
         sigma_gamma_pos1 = (sigma_B1 * sigma_gamma_11) / (sigma_B1 + sigma_gamma_11)
-        mu_gamma_pos1 = ((z1[m] * c1[m]) * sigma_gamma_pos1) / sigma_B1
+        mu_gamma_pos1 = (z1[m] * sigma_gamma_pos1) / sigma_B1
         sigma_gamma_pos2 = (sigma_B2 * sigma_gamma_22) / (sigma_B2 + sigma_gamma_22)
-        mu_gamma_pos2 = ((z2[m] * c2[m]) * sigma_gamma_pos2) / sigma_B2
+        mu_gamma_pos2 = (z2[m] * sigma_gamma_pos2) / sigma_B2
 
         gamma1[m] = np.random.normal(mu_gamma_pos1, math.sqrt(sigma_gamma_pos1), 1)
         gamma2[m] = np.random.normal(mu_gamma_pos2, math.sqrt(sigma_gamma_pos2), 1)
@@ -242,6 +242,17 @@ def evaluate_a(a00_t, a10_t, a01_t, a11_t):
     plt.hist(a11_t[BURN:], normed=True)
     plt.savefig('a11_hist.png')
 
+def evaluate_gamma(gamma1_t, gamma2_t):
+    gamma1_med = np.median(gamma1_t, axis=0)
+    print "Estimate: %f, Truth: %f" % (gamma1_med[0], GAMMA1[0])
+    print "Estimate: %f, Truth: %f" % (gamma1_med[1], GAMMA1[1])
+    print "Estimate: %f, Truth: %f" % (gamma1_med[2], GAMMA1[2])
+    print "Estimate: %f, Truth: %f" % (gamma1_med[3], GAMMA1[3])
+    print "Estimate: %f, Truth: %f" % (gamma1_med[4], GAMMA1[4])
+
+    #plt.figure()
+    #plt.plot(range(0, ITS), gamma1_t[:, 0])
+    #plt.savefig('gamma1_snp1_plot.png')
 
 def main():
 
@@ -268,10 +279,10 @@ def main():
     for it in range(0, ITS):
 
         # draw from conditional distributions
-        c1, c2 = draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2)
-        gamma1, gamma2 = draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2)
-        sigma_gamma = draw_sigma_gamma(gamma1, gamma2)
-        a00, a10, a01, a11 = draw_a(c1, c2)
+        c1, c2 = draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False)
+        gamma1, gamma2 = draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=False)
+        sigma_gamma = draw_sigma_gamma(gamma1, gamma2, debug=False)
+        a00, a10, a01, a11 = draw_a(c1, c2, debug=False)
 
         # save values from each iteration
         a00_t.append(a00)
@@ -287,6 +298,7 @@ def main():
 
     # evaluate accuracy
     evaluate_a(a00_t, a10_t, a01_t, a11_t)
+    evaluate_gamma(gamma1_t, gamma2_t)
 
 if __name__ == "__main__":
     main()

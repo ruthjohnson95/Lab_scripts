@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ee53d33-e7a9-476f-981e-41c23c9b46c5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a00_hist.png" afterPath="$PROJECT_DIR$/a00_hist.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a00_plot.png" afterPath="$PROJECT_DIR$/a00_plot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a01_hist.png" afterPath="$PROJECT_DIR$/a01_hist.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a01_plot.png" afterPath="$PROJECT_DIR$/a01_plot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a10_hist.png" afterPath="$PROJECT_DIR$/a10_hist.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a10_plot.png" afterPath="$PROJECT_DIR$/a10_plot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a11_hist.png" afterPath="$PROJECT_DIR$/a11_hist.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a11_plot.png" afterPath="$PROJECT_DIR$/a11_plot.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gibbs_simulations.py" afterPath="$PROJECT_DIR$/gibbs_simulations.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulations.py" afterPath="$PROJECT_DIR$/simulations.py" />
     </list>
     <ignored path="Lab_scripts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +25,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Lab_scripts$simulations.coverage" NAME="simulations Coverage Results" MODIFIED="1513280312401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Lab_scripts$gibbs_simulations.coverage" NAME="gibbs_simulations Coverage Results" MODIFIED="1513298061503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab_scripts$gibbs_simulations.coverage" NAME="gibbs_simulations Coverage Results" MODIFIED="1513360190686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,26 +39,40 @@
       <file leaf-file-name="gibbs_simulations.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gibbs_simulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="270" column="74" selection-start-line="270" selection-start-column="74" selection-end-line="270" selection-end-column="74" />
+            <state relative-caret-position="279">
+              <caret line="263" column="14" selection-start-line="263" selection-start-column="14" selection-end-line="263" selection-end-column="14" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
                 <element signature="e#446#538#0" expanded="false" />
-                <element signature="e#561#2159#0" expanded="false" />
                 <element signature="e#2184#2774#0" expanded="false" />
                 <element signature="e#2858#3420#0" expanded="false" />
-                <element signature="e#3501#4304#0" expanded="false" />
-                <element signature="e#3590#4194#0" expanded="false" />
-                <element signature="e#4382#4774#0" expanded="false" />
-                <element signature="e#4814#5297#0" expanded="false" />
-                <element signature="e#5348#6172#0" expanded="false" />
+                <element signature="e#3501#4284#0" expanded="false" />
+                <element signature="e#4362#4754#0" expanded="false" />
+                <element signature="e#4794#5277#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="936" column="0" selection-start-line="936" selection-start-column="0" selection-end-line="936" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="a10_plot.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a10_plot.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a01_plot.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a01_plot.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -430,18 +451,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31422925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31422925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -467,19 +488,17 @@
           <line>278</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/gibbs_simulations.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="936" column="0" selection-start-line="936" selection-start-column="0" selection-end-line="936" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a11_plot.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -490,27 +509,16 @@
         <state relative-caret-position="225">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gibbs_simulations.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="270" column="74" selection-start-line="270" selection-start-column="74" selection-end-line="270" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <element signature="e#446#538#0" expanded="false" />
-            <element signature="e#561#2159#0" expanded="false" />
-            <element signature="e#2184#2774#0" expanded="false" />
-            <element signature="e#2858#3420#0" expanded="false" />
-            <element signature="e#3501#4304#0" expanded="false" />
-            <element signature="e#3590#4194#0" expanded="false" />
-            <element signature="e#4382#4774#0" expanded="false" />
-            <element signature="e#4814#5297#0" expanded="false" />
-            <element signature="e#5348#6172#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="936" column="0" selection-start-line="936" selection-start-column="0" selection-end-line="936" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -519,9 +527,30 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/a01_plot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/a00_plot.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gibbs_simulations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="263" column="14" selection-start-line="263" selection-start-column="14" selection-end-line="263" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#446#538#0" expanded="false" />
+            <element signature="e#2184#2774#0" expanded="false" />
+            <element signature="e#2858#3420#0" expanded="false" />
+            <element signature="e#3501#4284#0" expanded="false" />
+            <element signature="e#4362#4754#0" expanded="false" />
+            <element signature="e#4794#5277#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
