@@ -15,9 +15,9 @@ random.seed(10)
 ITS = 500
 BURN = 50
 
-M = 5000
-N1 = 200000
-N2 = 200000
+M = 1000
+N1 = 1000
+N2 = 1000
 Ns = 0
 H1 = .99
 H2 = .99
@@ -214,14 +214,16 @@ for it in range(0, ITS):
         gamma1[m] = np.random.normal(mu_gamma_pos1, math.sqrt(sigma_gamma_pos1), 1)
         gamma2[m] = np.random.normal(mu_gamma_pos2, math.sqrt(sigma_gamma_pos2), 1)
 
-        #if m == 0:
-            #print gamma1_truth[m]
-            #print gamma1[m]
-            #print '\n'
+        """
+        if m == 0:
+            print gamma1_truth[m]
+            print gamma1[m]
+            print '\n'
+        """
 
     # TESTING c-vector:
-    #c1[:] = c1_truth[:]
-    #c2[:] = c2_truth[:]
+    c1[:] = c1_truth[:]
+    c2[:] = c2_truth[:]
     #print np.sum(c1)
     #print np.sum(c2)
 
@@ -254,7 +256,7 @@ for it in range(0, ITS):
     a10 = a[1]
     a01 = a[2]
     a11 = a[3]
-    print "a00: %f, a10: %f, a01: %f, a11: %f" % (a00, a10, a01, a11)
+    #print "a00: %f, a10: %f, a01: %f, a11: %f" % (a00, a10, a01, a11)
 
     # UPDATE: store everything per iteration
     a00_t.append(a00)
@@ -273,6 +275,10 @@ for it in range(0, ITS):
 
 gamma1_med = np.median(gamma1_t, axis=0)
 gamma2_med = np.median(gamma2_t, axis=0)
+
+print gamma1_truth[1:10]
+print '\n'
+print gamma1_med[1:10]
 
 
 #print sigma_gamma_truth[0,0]
@@ -299,20 +305,15 @@ plt.savefig( 'a01_plot.png' )
 plt.figure()
 plt.plot(range(0,ITS), a11_t)
 plt.savefig( 'a11_plot.png' )
-
-
 plt.figure()
 plt.hist(a00_t[BURN:],normed=True)
 plt.savefig('a00_hist.png')
-
 plt.figure()
 plt.hist(a10_t[BURN:], normed=True)
 plt.savefig('a10_hist.png')
-
 plt.figure()
 plt.hist(a01_t[BURN:], normed=True)
 plt.savefig('a01_hist.png')
-
 plt.figure()
 plt.hist(a11_t[BURN:], normed=True)
 plt.savefig('a11_hist.png')

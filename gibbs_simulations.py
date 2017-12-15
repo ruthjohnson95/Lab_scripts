@@ -5,16 +5,14 @@ import math
 import random
 import matplotlib.pyplot as plt
 
-random.seed(10)
-
 # GLOBAL Variables
-ITS = 100
+ITS = 500
 BURN = 20
-M = 100
+M = 1000
+N1 = 10000
+N2 = 10000
 H1 = .05
 H2 = .05
-N1 = 10
-N2 = 10
 Ns = 0
 A00 = .70
 A10 = .10
@@ -31,8 +29,9 @@ V = np.identity(M)
 
 
 def sigmoid(x):
-    if x < -5:
-        x = -5
+    # prevent out of range error
+    if x < -6:
+        x = -6
     return 1 / (1 + math.exp(-x))
 
 
@@ -138,7 +137,7 @@ def draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False):
         c1[m] = c1m
         c2[m] = c2m
 
-    if debug == True:
+    if debug is True:
         c1[:] = C1[:]
         c2[:] = C2[:]
 
@@ -162,7 +161,7 @@ def draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
         gamma1[m] = np.random.normal(mu_gamma_pos1, math.sqrt(sigma_gamma_pos1), 1)
         gamma2[m] = np.random.normal(mu_gamma_pos2, math.sqrt(sigma_gamma_pos2), 1)
 
-    if debug == True:
+    if debug is True:
         gamma1[:] = GAMMA1[:]
         gamma2[:] = GAMMA2[:]
 
@@ -182,7 +181,7 @@ def draw_sigma_gamma(gamma1, gamma2, debug=False): # covariance matrix
 
     sigma_gamma = invwishart.rvs(df, scale)
 
-    if debug==True:
+    if debug is True:
         sigma_gamma = SIGMA_GAMMA
 
     return sigma_gamma
@@ -203,7 +202,7 @@ def draw_a(c1, c2, debug=False):
     a01 = a[2]
     a11 = a[3]
 
-    if debug == True:
+    if debug is True:
         a00 = A00
         a10 = A10
         a01 = A01
@@ -245,6 +244,9 @@ def evaluate_a(a00_t, a10_t, a01_t, a11_t):
 
 
 def main():
+
+    random.seed(10)
+
     a00_t = []
     a10_t = []
     a01_t = []
@@ -256,19 +258,26 @@ def main():
     gamma1_t = []
     gamma2_t = []
 
+    # simulate beta-hats
     z1, z2 = simulate()
+
+    # initialize for t0
     a00, a10, a01, a11, c1, c2, gamma1, gamma2, sigma_gamma = initialize()
+
+    # run Gibbs sampling
     for it in range(0, ITS):
+
+        # draw from conditional distributions
         c1, c2 = draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2)
         gamma1, gamma2 = draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2)
         sigma_gamma = draw_sigma_gamma(gamma1, gamma2)
         a00, a10, a01, a11 = draw_a(c1, c2)
 
+        # save values from each iteration
         a00_t.append(a00)
         a10_t.append(a10)
         a01_t.append(a01)
         a11_t.append(a11)
-
         c1_t.append(c1.tolist())
         c2_t.append(c2.tolist())
         sigma_gamma_11_t.append(sigma_gamma[0, 0])
@@ -276,6 +285,7 @@ def main():
         gamma1_t.append(gamma1)
         gamma2_t.append(gamma2)
 
+    # evaluate accuracy
     evaluate_a(a00_t, a10_t, a01_t, a11_t)
 
 if __name__ == "__main__":
