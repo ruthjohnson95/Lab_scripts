@@ -6,11 +6,11 @@ import random
 import matplotlib.pyplot as plt
 
 # GLOBAL Variables
-ITS = 500
-BURN = 20
+ITS = 2000
+BURN = 10
 M = 1000
-N1 = 10000
-N2 = 10000
+N1 = 5000
+N2 = 5000
 H1 = .99
 H2 = .99
 Ns = 0
@@ -144,7 +144,7 @@ def draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False):
     return c1, c2
 
 
-def draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
+def draw_gamma(gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
     sigma_B1 = (1 - H1) / N1
     sigma_B2 = (1 - H2) / N2
 
@@ -250,9 +250,20 @@ def evaluate_gamma(gamma1_t, gamma2_t):
     print "Estimate: %f, Truth: %f" % (gamma1_med[3], GAMMA1[3])
     print "Estimate: %f, Truth: %f" % (gamma1_med[4], GAMMA1[4])
 
-    #plt.figure()
-    #plt.plot(range(0, ITS), gamma1_t[:, 0])
-    #plt.savefig('gamma1_snp1_plot.png')
+    plt.figure()
+    gamma1_t_mat = np.matrix(gamma1_t)
+    plt.plot(range(0, ITS), gamma1_t_mat[:, 0])
+    plt.savefig('gamma1_snp1_plot.png')
+
+    plt.figure()
+    gamma1_t_mat = np.matrix(gamma1_t)
+    plt.plot(range(0, ITS), gamma1_t_mat[:, 1])
+    plt.savefig('gamma1_snp2_plot.png')
+
+    plt.figure()
+    gamma1_t_mat = np.matrix(gamma1_t)
+    plt.plot(range(0, ITS), gamma1_t_mat[:, 2])
+    plt.savefig('gamma1_snp3_plot.png')
 
 def main():
 
@@ -280,7 +291,7 @@ def main():
 
         # draw from conditional distributions
         c1, c2 = draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False)
-        gamma1, gamma2 = draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=False)
+        gamma1, gamma2 = draw_gamma(gamma1, gamma2, sigma_gamma, z1, z2, debug=False)
         sigma_gamma = draw_sigma_gamma(gamma1, gamma2, debug=False)
         a00, a10, a01, a11 = draw_a(c1, c2, debug=False)
 
@@ -293,8 +304,8 @@ def main():
         c2_t.append(c2.tolist())
         sigma_gamma_11_t.append(sigma_gamma[0, 0])
         sigma_gamma_22_t.append(sigma_gamma[1, 1])
-        gamma1_t.append(gamma1)
-        gamma2_t.append(gamma2)
+        gamma1_t.append(gamma1.tolist())
+        gamma2_t.append(gamma2.tolist())
 
     # evaluate accuracy
     evaluate_a(a00_t, a10_t, a01_t, a11_t)
