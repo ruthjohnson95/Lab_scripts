@@ -10,7 +10,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a10_plot.png" afterPath="$PROJECT_DIR$/a10_plot.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a11_hist.png" afterPath="$PROJECT_DIR$/a11_hist.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a11_plot.png" afterPath="$PROJECT_DIR$/a11_plot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gamma1_snp1_plot.png" afterPath="$PROJECT_DIR$/gamma1_snp1_plot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gamma1_snp2_plot.png" afterPath="$PROJECT_DIR$/gamma1_snp2_plot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gamma1_snp3_plot.png" afterPath="$PROJECT_DIR$/gamma1_snp3_plot.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gibbs_simulations.py" afterPath="$PROJECT_DIR$/gibbs_simulations.py" />
     </list>
     <ignored path="Lab_scripts.iws" />
@@ -25,7 +27,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Lab_scripts$gibbs_simulations.coverage" NAME="gibbs_simulations Coverage Results" MODIFIED="1513363094646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lab_scripts$gibbs_simulations.coverage" NAME="gibbs_simulations Coverage Results" MODIFIED="1513405904086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Lab_scripts$simulations.coverage" NAME="simulations Coverage Results" MODIFIED="1513280312401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -40,41 +42,21 @@
       <file leaf-file-name="gibbs_simulations.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gibbs_simulations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
-                <element signature="e#445#537#0" expanded="false" />
-                <element signature="e#560#2158#0" expanded="false" />
-                <element signature="e#2183#2773#0" expanded="false" />
-                <element signature="e#2857#3419#0" expanded="false" />
-                <element signature="e#4353#4745#0" expanded="false" />
-                <element signature="e#4785#5268#0" expanded="false" />
-                <element signature="e#5319#6143#0" expanded="false" />
-                <element signature="e#6189#6989#0" expanded="false" />
+                <element signature="e#446#538#0" expanded="false" />
+                <element signature="e#561#2159#0" expanded="false" />
+                <element signature="e#2184#2774#0" expanded="false" />
+                <element signature="e#2858#3420#0" expanded="false" />
+                <element signature="e#3501#4278#0" expanded="false" />
+                <element signature="e#4356#4748#0" expanded="false" />
+                <element signature="e#4788#5271#0" expanded="false" />
+                <element signature="e#5322#6146#0" expanded="false" />
+                <marker date="1513405902000" expanded="false" signature="6187:6992" placeholder="..." />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gamma1_snp2_plot.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gamma1_snp2_plot.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gamma1_snp3_plot.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gamma1_snp3_plot.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gamma1_snp1_plot.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gamma1_snp1_plot.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -85,8 +67,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="a10_hist.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a10_hist.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a11_hist.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a11_hist.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="a00_plot.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a00_plot.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a00_hist.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a00_hist.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -101,6 +104,13 @@
       </file>
       <file leaf-file-name="a11_plot.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a11_plot.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a01_hist.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a01_hist.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -188,8 +198,8 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Python.gibbs_simulations">
     <configuration default="false" name="simulations" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -465,15 +475,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12197092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16235864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31369862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31232876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -510,11 +520,6 @@
           <line>278</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/gibbs_simulations.py</url>
-          <line>294</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="15" />
     </breakpoint-manager>
@@ -527,14 +532,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
-            <element signature="e#445#537#0" expanded="false" />
-            <element signature="e#560#2158#0" expanded="false" />
-            <element signature="e#2183#2773#0" expanded="false" />
-            <element signature="e#2857#3419#0" expanded="false" />
-            <element signature="e#4353#4745#0" expanded="false" />
-            <element signature="e#4785#5268#0" expanded="false" />
-            <element signature="e#5319#6143#0" expanded="false" />
-            <element signature="e#6189#6989#0" expanded="false" />
+            <element signature="e#446#538#0" expanded="false" />
+            <element signature="e#561#2159#0" expanded="false" />
+            <element signature="e#2184#2774#0" expanded="false" />
+            <element signature="e#2858#3420#0" expanded="false" />
+            <element signature="e#3501#4278#0" expanded="false" />
+            <element signature="e#4356#4748#0" expanded="false" />
+            <element signature="e#4788#5271#0" expanded="false" />
+            <element signature="e#5322#6146#0" expanded="false" />
+            <marker date="1513405902000" expanded="false" signature="6187:6992" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -580,26 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a01_hist.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a01_plot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a11_plot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gamma1_snp2_plot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gamma1_snp3_plot.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -610,7 +596,22 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a10_plot.png">
+    <entry file="file://$PROJECT_DIR$/gamma1_snp2_plot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a11_plot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a10_hist.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a11_hist.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -620,20 +621,41 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/a00_hist.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a01_plot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a01_hist.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a10_plot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gibbs_simulations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
-            <element signature="e#445#537#0" expanded="false" />
-            <element signature="e#560#2158#0" expanded="false" />
-            <element signature="e#2183#2773#0" expanded="false" />
-            <element signature="e#2857#3419#0" expanded="false" />
-            <element signature="e#4353#4745#0" expanded="false" />
-            <element signature="e#4785#5268#0" expanded="false" />
-            <element signature="e#5319#6143#0" expanded="false" />
-            <element signature="e#6189#6989#0" expanded="false" />
+            <element signature="e#446#538#0" expanded="false" />
+            <element signature="e#561#2159#0" expanded="false" />
+            <element signature="e#2184#2774#0" expanded="false" />
+            <element signature="e#2858#3420#0" expanded="false" />
+            <element signature="e#3501#4278#0" expanded="false" />
+            <element signature="e#4356#4748#0" expanded="false" />
+            <element signature="e#4788#5271#0" expanded="false" />
+            <element signature="e#5322#6146#0" expanded="false" />
+            <marker date="1513405902000" expanded="false" signature="6187:6992" placeholder="..." />
           </folding>
         </state>
       </provider>

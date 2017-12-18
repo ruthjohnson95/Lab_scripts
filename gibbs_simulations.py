@@ -7,17 +7,17 @@ import matplotlib.pyplot as plt
 
 # GLOBAL Variables
 ITS = 2000
-BURN = 10
-M = 1000
-N1 = 5000
-N2 = 5000
+BURN = 100
+M = 5000
+N1 = 2000
+N2 = 2000
 H1 = .99
 H2 = .99
 Ns = 0
-A00 = .70
-A10 = .10
-A01 = .10
-A11 = 0.10
+A00 = .25
+A10 = .25
+A01 = .25
+A11 = 0.25
 C1 = np.empty(M)
 C2 = np.empty(M)
 SIGMA_GAMMA = np.empty((2,2))
@@ -144,7 +144,7 @@ def draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False):
     return c1, c2
 
 
-def draw_gamma(gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
+def draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
     sigma_B1 = (1 - H1) / N1
     sigma_B2 = (1 - H2) / N2
 
@@ -153,10 +153,10 @@ def draw_gamma(gamma1, gamma2, sigma_gamma, z1, z2, debug=False):
         sigma_gamma_22 = sigma_gamma[1, 1]
 
         # params of posterior distribution
-        sigma_gamma_pos1 = (sigma_B1 * sigma_gamma_11) / (sigma_B1 + sigma_gamma_11)
-        mu_gamma_pos1 = (z1[m] * sigma_gamma_pos1) / sigma_B1
-        sigma_gamma_pos2 = (sigma_B2 * sigma_gamma_22) / (sigma_B2 + sigma_gamma_22)
-        mu_gamma_pos2 = (z2[m] * sigma_gamma_pos2) / sigma_B2
+        sigma_gamma_pos1 = 1/float( (c1[m]/sigma_B1) + (1/sigma_gamma_11) )
+        mu_gamma_pos1 = (z1[m]*c1[m] / sigma_B1) * sigma_gamma_pos1
+        sigma_gamma_pos2 = 1/float( (c2[m]/sigma_B2) + (1/sigma_gamma_22) )
+        mu_gamma_pos2 = (z2[m]*c2[m] / sigma_B2) * sigma_gamma_pos2
 
         gamma1[m] = np.random.normal(mu_gamma_pos1, math.sqrt(sigma_gamma_pos1), 1)
         gamma2[m] = np.random.normal(mu_gamma_pos2, math.sqrt(sigma_gamma_pos2), 1)
@@ -291,7 +291,7 @@ def main():
 
         # draw from conditional distributions
         c1, c2 = draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False)
-        gamma1, gamma2 = draw_gamma(gamma1, gamma2, sigma_gamma, z1, z2, debug=False)
+        gamma1, gamma2 = draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=True)
         sigma_gamma = draw_sigma_gamma(gamma1, gamma2, debug=False)
         a00, a10, a01, a11 = draw_a(c1, c2, debug=False)
 
