@@ -1,0 +1,67 @@
+Experiments:
+
+ITS = 2000
+BURN = 100
+M = 5000
+N1 = 5000
+N2 = 5000
+H1 = .50
+H2 = .50
+Ns = 0
+A00 = .60
+A10 = .10
+A01 = .10
+A11 = 0.20
+
+0) P(a, c, gamma, sigma | beta_hat)
+
+1) P(a, c, gamma | sigma, beta_hat)
+
+0.240858822244
+0.0860323565782
+0.475557207437
+0.184724774963
+Estimate: 0.000004, Truth: 0.000018
+Estimate: -0.000005, Truth: -0.000182
+Estimate: -0.000005, Truth: 0.000036
+Estimate: -0.000004, Truth: 0.000149
+Estimate: 0.000006, Truth: -0.000118
+Estimate sig11: 0.000000, Truth: 0.000000
+Estimate sig22: 0.000000, Truth: 0.000000
+
+
+2) P(a, c, sigma | gamma, beta_hat)
+
+0.249328340532
+0.0577860212895
+0.519590160618
+0.116525475465
+Estimate: 0.000257, Truth: 0.000257
+Estimate: -0.000026, Truth: -0.000026
+Estimate: 0.000008, Truth: 0.000008
+Estimate: 0.000038, Truth: 0.000038
+Estimate: 0.000079, Truth: 0.000079
+Estimate sig11: 0.000100, Truth: 0.000000
+Estimate sig22: 0.000100, Truth: 0.000000
+
+3) P(a, c | gamma, sigma, beta_hat)
+
+0.479546250183
+0.233073579591
+0.186603976569
+0.0742949304464
+Estimate: -0.000055, Truth: -0.000055
+Estimate: -0.000099, Truth: -0.000099
+Estimate: -0.000448, Truth: -0.000448
+Estimate: -0.000043, Truth: -0.000043
+Estimate: -0.000224, Truth: -0.000224
+Estimate sig11: 0.000000, Truth: 0.000000
+Estimate sig22: 0.000000, Truth: 0.000000
+
+
+4) P(gamma, sigma, a | c, beta_hat)
+
+5) P(gamma, sigma, c | a, beta_hat)
+
+6) P(gamma, sigma | a, c, beta_hat)
+

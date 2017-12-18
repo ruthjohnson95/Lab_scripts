@@ -394,7 +394,7 @@ def main():
         # draw from conditional distributions
         c1, c2 = draw_c(a00, a10, a01, a11, c1, c2, gamma1, gamma2, z1, z2, debug=False)
         gamma1, gamma2 = draw_gamma(c1, c2, gamma1, gamma2, sigma_gamma, z1, z2, debug=True)
-        sigma_gamma = draw_sigma_gamma(gamma1, gamma2, debug=True)
+        sigma_gamma = draw_sigma_gamma(gamma1, gamma2, debug=False)
         a00, a10, a01, a11 = draw_a(c1, c2, debug=False)
 
         # save values from each iteration
